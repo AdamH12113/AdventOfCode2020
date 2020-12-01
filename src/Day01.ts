@@ -3,8 +3,8 @@ import {readFileSync} from 'fs';
 
 //Read and parse the input file. Nifty Windows-compatible newline split courtesy of:
 //https://stackoverflow.com/questions/21895233/how-in-node-to-split-string-by-newline-n
-//const input = readFileSync('Example01.txt', 'utf8');
-const input = readFileSync('Input01.txt', 'utf8');
+//const input = readFileSync('src/Example01.txt', 'utf8');
+const input = readFileSync('src/Input01.txt', 'utf8');
 const lines = input.split(/\r?\n/);
 const numbers = lines.map(n => parseInt(n, 10));
 
